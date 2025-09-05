@@ -1,0 +1,24 @@
+{
+	"questions":[
+		{
+			"id":1,
+			"question":"Combien d'heures as-tu dormi cette nuit?",
+			"type":"numeric",
+			"recomendations": [
+				{"condition": "<7", "response": "Essaie de dormir plus longtemps !"},
+        			{"condition": ">=7 && <=9", "response": "Super, ton sommeil est suffisant !"},
+				{ "condition": ">9", "response": "Attention à ne pas trop dormir !"}
+			]
+		},
+		{
+			"id":2,
+			"question":"As-tu fait de l'exercice aujourd'hui ? (minutes)",
+			"type":"numeric",
+			"recomendations": [
+				{"condition": "<30", "response": "Bouge un peu plus aujourd'hui !"},
+        			{"condition": ">=30", "response": "Parfait, continue comme ça !"}
+			]
+		}
+	]
+}
+
